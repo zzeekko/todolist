@@ -1,0 +1,45 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9b8b8;
+}
+
+h1 {
+    color: rgb(243, 30, 243);
+    text-shadow: 3px 3px 3px #fc4ac0;
+}
+
+label, h2, .text {
+    color: rgb(130, 4, 130);
+}
+
+p {
+    font-size: 26px;
+}
+
+.header {
+    padding: 10px 0;
+    border-bottom: violet;
+}
+
+.main {
+    padding: 20px 0;
+}
+
+.footer {
+    padding: 20px 0;
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 10px 5px;
+    background-color: #fff;
+    border: 3px solid violet;
+    border-radius: 5px;
+}
+
+#addTaskbtn {
+    background-color: violet;
+}
