@@ -47,6 +47,20 @@ addTaskBtn.addEventListener('click', (e)=> {
 // take input
 const validateInput =()=> {
     
+
+    if (taskInput.value === '') {
+        alert('Please enter a task before submitting')
+    } else {
+
+        for (let i = 0; i < taskArray.length; i++) {
+            if (taskInput.value == taskArray[i].task) {
+                alert('Task has already been added')
+                taskInput.value = ''
+                return
+            }
+        }
+        makeTask(taskInput.value)
+    }
     // if (taskInput.value === '') {
     //     alert('Please enter a task before submitting')
     // } else {
@@ -55,7 +69,7 @@ const validateInput =()=> {
 
     // These two do the same thing. ^ v
 
-    taskInput.value === '' ? alert('Please enter a task before submitting') : makeTask(taskInput.value)
+    // taskInput.value === '' ? alert('Please enter a task before submitting') : makeTask(taskInput.value)
 
     taskInput.value = ''
 }
